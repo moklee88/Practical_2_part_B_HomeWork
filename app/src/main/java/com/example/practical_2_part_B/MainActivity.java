@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
 
     private int mCount = 0;
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void countUp(View view){
         if(mShowCount != null)
-            mShowCount.setText(Integer.toString(mCount));
+            mShowCount.setText(String.format(Locale.ENGLISH, "%d", mCount));
 
         mResetButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
         mResetButton.setClickable(true);
