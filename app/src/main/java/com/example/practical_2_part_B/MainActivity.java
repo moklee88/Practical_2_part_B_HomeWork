@@ -34,8 +34,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void countUp(View view){
+        mCount++;
         if(mShowCount != null)
-            mShowCount.setText(String.format(Locale.ENGLISH, "%d", mCount));
+            mShowCount.setText(Integer.toString(mCount));
 
         mResetButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
         mResetButton.setClickable(true);
