@@ -37,6 +37,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/darker_gray"
         android:text="@string/zero_text"
+        android:onClick="resetZero"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/button_count"
         app:layout_constraintStart_toStartOf="parent"

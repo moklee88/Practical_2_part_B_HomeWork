@@ -14,7 +14,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:background="@android:color/darker_gray"
-        android:onClick="showToast"
+        android:onClick="resetZero"
         android:text="@string/zero_text"
         android:textColor="@android:color/white"
         android:textSize="60sp"
